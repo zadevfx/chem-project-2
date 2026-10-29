@@ -1,0 +1,4 @@
+Flask>=3.0
+Flask-Cors>=4.0
+gunicorn>=22.0
+rdkit>=2023.9
