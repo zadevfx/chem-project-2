@@ -204,10 +204,13 @@
       pointer-events: none;
       opacity: 0;
       background:
-        linear-gradient(135deg, rgba(29, 104, 255, .08), transparent 26%),
-        radial-gradient(ellipse at 70% 8%, rgba(20, 125, 255, .28), transparent 34%),
-        radial-gradient(ellipse at 92% 54%, rgba(38, 106, 255, .12), transparent 30%),
-        linear-gradient(145deg, #07101d 0%, #091526 42%, #07111f 100%);
+        radial-gradient(ellipse at 18% 18%, rgba(34, 211, 238, .20), transparent 28%),
+        radial-gradient(ellipse at 82% 10%, rgba(168, 85, 247, .22), transparent 27%),
+        radial-gradient(ellipse at 72% 74%, rgba(14, 165, 233, .14), transparent 30%),
+        radial-gradient(ellipse at 28% 88%, rgba(20, 184, 166, .12), transparent 26%),
+        linear-gradient(145deg, #050b18 0%, #081426 46%, #0a1020 100%);
+      background-attachment: fixed;
+      filter: saturate(125%);
     }
     [data-theme="dark"] body::before { opacity: 1; }
     [data-theme="dark"] body::after {
@@ -216,11 +219,13 @@
       inset: 0;
       z-index: -1;
       pointer-events: none;
-      background-image:
-        linear-gradient(rgba(99, 161, 255, .025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(99, 161, 255, .025) 1px, transparent 1px);
-      background-size: 64px 64px;
-      mask-image: linear-gradient(to bottom, black, transparent 78%);
+      background:
+        linear-gradient(118deg, transparent 18%, rgba(45, 212, 191, .14) 34%, transparent 47%),
+        linear-gradient(112deg, transparent 43%, rgba(168, 85, 247, .14) 54%, transparent 66%),
+        linear-gradient(142deg, transparent 56%, rgba(34, 211, 238, .11) 68%, transparent 82%);
+      background-size: 130% 130%;
+      filter: blur(34px) saturate(145%);
+      opacity: .9;
     }
     .wrap { width: min(1280px, calc(100% - 40px)); }
     .site-header { backdrop-filter: blur(18px); background: color-mix(in srgb, var(--surface) 88%, transparent); }
