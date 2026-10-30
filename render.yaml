@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: chem-project-2-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://zadevfx.github.io
