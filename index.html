@@ -384,12 +384,33 @@
       .intro { padding: 32px 28px; }
     }
     @media (max-width: 620px) {
-      .wrap { width: calc(100% - 28px); }
-      .intro { margin-top: 14px; padding: 26px 20px; }
+      .wrap { width: 100%; padding-left: 14px; padding-right: 14px; }
+      .header-inner { min-height: 56px; }
+      .brand { gap: 7px; font-size: .98rem; }
+      .brand-mark { width: 25px; height: 25px; }
+      main.wrap { padding-top: 0; }
+      .intro { margin-top: 12px; padding: 22px 16px; border-radius: 16px; }
       .intro::after { display: none; }
+      .intro h1 { font-size: clamp(1.7rem, 9vw, 2.25rem); }
+      .intro p { font-size: .96rem; }
+      .panel { margin-top: 14px; padding: 14px; border-radius: 14px; }
+      .panel-head { align-items: stretch; gap: 10px; }
+      .panel-head > div:first-child { flex-basis: 100%; width: 100%; }
+      .panel-head > .input-heading-row,
+      .panel-head > p { flex-basis: 100%; width: 100%; }
+      .input-heading-row { flex-direction: column; align-items: stretch; gap: 8px; }
+      .molecule-search-wrap { width: 100%; }
+      .molecule-search { height: 42px; }
+      .examples { gap: 8px; }
+      .chip { min-height: 36px; }
+      .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .actions .btn-primary { grid-column: 1 / -1; }
+      .actions .btn { justify-content: center; width: 100%; }
+      .hint { grid-column: 1 / -1; margin-left: 0; text-align: center; }
       .property-definitions dl { grid-template-columns: 1fr; }
       .card-grid, .card-grid-3d { grid-template-columns: 1fr; }
-      .viewer { height: 260px; }
+      .viewer { height: 230px; }
+      .site-footer { padding: 14px 0; text-align: center; }
     }
   </style>
 </head>
