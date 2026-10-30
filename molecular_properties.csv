@@ -1,4 +1,0 @@
-Molecule name,SMILES,Canonical SMILES,MW,logP,HBD,HBA,TPSA
-Ethanol,CCO,CCO,46.07,0,1,1,20.23
-Benzene,c1ccccc1,c1ccccc1,78.11,1.69,0,0,0
-Aspirin,CC(=O)Oc1ccccc1C(=O)O,CC(=O)Oc1ccccc1C(=O)O,180.16,1.31,1,3,63.6
